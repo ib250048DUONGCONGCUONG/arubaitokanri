@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アルバイト時間管理</title>
+  <link rel="stylesheet" href="time.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>アルバイト時間管理</h1>
+
+    <div class="card">
+      <label>日付</label>
+      <input type="date" id="date">
+
+      <label>開始時間</label>
+      <input type="time" id="start">
+
+      <label>終了時間</label>
+      <input type="time" id="end">
+
+      <label>時給（円）</label>
+      <input type="number" id="salary" placeholder="例：1000">
+
+      <button onclick="addWork()">追加</button>
+    </div>
+
+    <h2>記録一覧</h2>
+    <ul id="list"></ul>
+
+    <h3 id="total">合計：0 円</h3>
+  </div>
+
+  <script src="time.js"></script>
+</body>
+</html>
